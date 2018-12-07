@@ -22,7 +22,7 @@ Given binary tree [3,9,20,null,null,15,7],
 return its depth = 3.
 ```
 
-### Solutions
+### Python Solutions
 
 #### Approach : Recursive
 
@@ -32,7 +32,7 @@ return its depth = 3.
 
 ```Python
 class Solution(object):
-    def maxDepth(self, root):
+    def max_depth(self, root):
         """
         Given a binary tree, find its maximum depth
 
@@ -44,3 +44,4 @@ class Solution(object):
         """
         return 1 + max(map(self.maxDepth, (root.left, root.right))) if root is not None else 0
 ```
+

@@ -21,7 +21,7 @@ Given binary tree [3,9,20,null,null,15,7],
 return its minimum depth = 2.
 ```
 
-## Solutions
+### Python Solutions
 
 #### Approach : Recursive
 
@@ -31,7 +31,7 @@ return its minimum depth = 2.
 
 ```Python
 class Solution(object):
-    def minDepth(self, root):
+    def min_depth(self, root):
         """
         Given a binary tree, find its minimum depth
 
@@ -52,3 +52,4 @@ class Solution(object):
         else:
             return 1
 ```
+
