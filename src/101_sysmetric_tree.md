@@ -23,7 +23,7 @@ Note:
 Bonus points if you could solve it both recursively and iteratively.
 ```
 
-### Solutions
+### Python Solutions
 
 #### Approach 1: Recursive
 
@@ -32,7 +32,7 @@ Bonus points if you could solve it both recursively and iteratively.
 
 ```Python
 class Solution(object):
-    def is_Symmetric(self, root):
+    def is_symmetric(self, root):
         """
         Given a binary tree, check whether it is a mirror of itself
 
@@ -65,7 +65,7 @@ class Solution(object):
 
 ```Python
 class Solution(object):
-    def isSymmetric(self, root):
+    def is_symmetric(self, root):
        """
         Given a binary tree, check whether it is a mirror of itself
         
@@ -78,7 +78,7 @@ class Solution(object):
         lst = []
         lst.append(root)
         lst.append(root)
-        while len(lst)!=0:
+        while len(lst) != 0:
             t1 = lst.pop()
             t2 = lst.pop()
             if t1 is None and t2 is None:
@@ -93,3 +93,6 @@ class Solution(object):
             lst.append(t2.left)
         return True
 ```
+
+### C++ solutions
+
