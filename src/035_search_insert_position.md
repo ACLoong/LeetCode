@@ -25,23 +25,23 @@ Here are few examples
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
-        if(nums.size() == 0){
-			return 0;
+        if(nums.empty()){
+		return 0;
+	}
+	int left = 0;
+	int right = nums.size() - 1;
+	while(left <= right){
+		int mid = (left + right)/2;
+		if( nums[mid] == target){
+			return mid;
 		}
-		int left=0;
-		int right = nums.size() - 1;
-		while(left <= right){
-			int mid = (left + right)/2;
-			if( nums[mid] == target){
-				return mid;
-			}
-			if(nums[mid] < target){
-				left = mid + 1;
-			}
-			else
-			    right = mid - 1;
+		if(nums[mid] < target){
+			left = mid + 1;
 		}
-		return left;
+		else
+			right = mid - 1;
+	}
+	return left;
     }
 };
 
@@ -49,9 +49,9 @@ public:
 
 ## Result
 
-*Success
+* Success
 
-*Details:
+* Details:
 
 Runtime: 8 ms, faster than 32.84% of C++ online submissions for Search Insert Position.
 
