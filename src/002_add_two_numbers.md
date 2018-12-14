@@ -8,13 +8,12 @@ You are given two non-empty linked lists representing two non-negative integers.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-Example:
-
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
+Example:  
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)  
+Output: 7 -> 0 -> 8  
 Explanation: 342 + 465 = 807.
 
-## Solution in C++
+## C++ Solution 
 
 * Time complexity O(m+n)
 * Space complexity O(1)
@@ -35,27 +34,31 @@ public:
         ListNode *prev = head;
         int carry = 0;
         int sum = 0;
-        while (l1 || l2) {
-            int v1 = l1 == nullptr ? 0 : l1->val;
-            int v2 = l2 == nullptr ? 0 : l2->val; 
+        while (nullptr != l1 || nullptr != l2) {
+            int v1 = (l1 == nullptr ? 0 : l1->val);
+            int v2 = (l2 == nullptr ? 0 : l2->val); 
             sum = v1 + v2 + carry;
             carry = sum / 10;
             prev->next = new ListNode(sum % 10);
             prev = prev->next;
-            if (l1) l1 = l1->next;
-            if (l2) l2 = l2->next;
-            
+            if (nullptr != l1) {
+		l1 = l1->next;
+	    }
+            if (nullptr != l2) { 
+		l2 = l2->next;
+	    }    
         }
-        if (carry==1)
+        if (carry==1) {
             prev->next = new ListNode(1);
+	}
         return head->next;
     }
 };
 ```
-## Result
-* Success
-* Details:
 
+###Submissions  
+* Success  
+* Details:  
 Runtime: 28 ms, faster than 98.57% of C++ online submissions for Add Two Numbers.
 
 
