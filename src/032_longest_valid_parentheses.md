@@ -8,12 +8,14 @@ Given a string containing just the characters '(' and ')', find the length of th
 
 Example 1:
 
-Input: "(()" Output: 2 Explanation: The longest valid parentheses substring is "()"
+Input: "(()"   
+Output: 2  
+Explanation: The longest valid parentheses substring is "()"
 
 Example 2:
 
-Input: ")()())"
-Output: 4
+Input: ")()())"  
+Output: 4  
 Explanation: The longest valid parentheses substring is "()()"
 
 ## C++ Solution
@@ -52,10 +54,9 @@ public:
 };
 ```
 
-##Result 
+**Submissions**
 * Success
-* Details:
-
+* Details:  
 Runtime: 8 ms, faster than 62.71% of C++ online submissions for Longest Valid Parentheses.
 
 
