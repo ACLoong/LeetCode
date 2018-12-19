@@ -13,7 +13,7 @@ Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8  
 Explanation: 342 + 465 = 807.
 
-## C++ Solution 
+## C++ Solution
 
 * Time complexity O(m+n)
 * Space complexity O(1)
@@ -56,7 +56,7 @@ public:
 };
 ```
 
-###Submissions  
+**Submissions**
 * Success  
 * Details:  
 Runtime: 28 ms, faster than 98.57% of C++ online submissions for Add Two Numbers.
