@@ -48,7 +48,7 @@ public:
 		l2 = l2->next;
 	    }    
         }
-        if (carry==1) {
+        if (carry == 1) {
             prev->next = new ListNode(1);
 	}
         return head->next;
