@@ -1,6 +1,6 @@
 ## LeetCode
 
-LeetCode solutions in **C++** and **Python**
+LeetCode solutions in **C++**, **Java** and **Python**( **Note: Other programming languages such as C, Javascript are also preferred** )
 
 ---
 
