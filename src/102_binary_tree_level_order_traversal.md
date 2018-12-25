@@ -28,8 +28,8 @@ return its level order traversal as:
 
 ### Approach 1 : Recursion
 
-* Time complexity O(n)
-* Space complexity O(n)
+* Time complexity: O(n)
+* Space complexity: O(n)
 
 ```c++
 class Solution {
@@ -72,8 +72,8 @@ Runtime: 4 ms, faster than 98.84% of C++ online submissions for Binary Tree Leve
 
 ### Approach 2 :  Iteration
 
-* Time complexity O(n)
-* Space complexity O(1)
+* Time complexity: O(n)
+* Space complexity: O(n)
 
 ```c++
 class Solution {
@@ -83,7 +83,8 @@ public:
         if (nullptr == root) {
             return res;
         }
-        queue<TreeNode*> cur, next;
+        queue<TreeNode*> cur;
+        queue<TreeNode*> next;
         vector<int> level;
         
         cur.push(root);
