@@ -17,7 +17,7 @@ class Solution:
         end = l2
         start = 0
         while end <= l1:
-            if haystack[start:end:] == needle:
+            if haystack[start:end] == needle:
                 return start
             start +=1
             end +=1
