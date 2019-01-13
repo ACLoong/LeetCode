@@ -16,8 +16,7 @@ It is also improving our competitiveness of hunting for a job next year.
 
 * One LeetCode problem every day in the weekdays(Except in special circumstances)
 
-* You should commit the solutions in the **markdown(.md) format**. The specific format can refer to the contents that have been merged into the **master branch**.
-
+* You should commit the solutions in the **markdown(.md) format + source code file(such as .cpp, .py)**. The specific format can refer to the contents that have been merged into the **master branch**.
 ---
 
 ### How to Contribute
@@ -26,7 +25,7 @@ It is also improving our competitiveness of hunting for a job next year.
 
 * Use the command(`git clone + repository url`) to clone this repository from your Github to local machine;
 
-* Modify or add related content in a local project dynamically according to your needs;
+* First, create a **folder** named by the problem, then create **two files** in the folder (**Note:** In these two files, one is **.md file** that describe the content and requirements of the problem, another is **.py(or .cpp, .java etc) file** that write down your solutions(source code) about the problem);
 
 * Use this command (`git add`, `git commit -m + "commmit message"`) to submit the changes to the local repository after the achievement of your change;
 
@@ -34,7 +33,7 @@ It is also improving our competitiveness of hunting for a job next year.
 
 * Send (`pull requests`) and everyone of our team can review it;( **Note: One Problem one pr** )
 
-* (review)adopt or return to have a modification.
+* (`Review`)adopt or return to have a modification.
 
 ---
 
