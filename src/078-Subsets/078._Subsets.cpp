@@ -4,14 +4,14 @@ public:
         vector<vector<int>> res;
         vector<int> cur;
         sort(nums.begin(), nums.end());
-        getSub(nums, 0, cur, res);
+        getSub(nums, nums.begin(), cur, res);
         return res;
     }
-    void getSub(vector<int>& nums, int pos, vector<int>& cur, vector<vector<int>>& res) {
+    void getSub(vector<int>& nums, vector<int>::iterator it, vector<int>& cur, vector<vector<int>>& res) {
         res.push_back(cur);
-        for (int i = pos; i < nums.size(); ++i) {
-            cur.push_back(nums[i]);
-            getSub(nums, i + 1, cur, res);
+        for (auto iter = it; iter != nums.end(); iter++) {
+            cur.push_back(*iter);
+            getSub(nums, iter + 1, cur, res);
             cur.pop_back();
         }
     }
