@@ -22,7 +22,7 @@ class Solution:
         while end <= l1:
             if haystack[start:end] == needle:
                 return start
-            start +=1
-            end +=1
+            start += 1
+            end += 1
 
         return -1
