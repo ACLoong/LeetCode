@@ -9,6 +9,4 @@ class Solution:
         Returns:
             A bool value(bool)
         """
-        if len(nums) > len(set(nums)):
-            return True
-        return False
+        return len(nums) > len(set(nums))
