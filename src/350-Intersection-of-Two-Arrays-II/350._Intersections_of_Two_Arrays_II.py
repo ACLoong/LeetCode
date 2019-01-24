@@ -18,5 +18,5 @@ class Solution:
             if num in record and record[num]:
                 result.append(num)
                 record[num] -= 1
+        
         return result
-   
